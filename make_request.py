@@ -8,7 +8,7 @@ offset_counter = 1
 
 while file_counter < 39:
 
-    headers = {'token': 'RtWMUMYImryAaCbuEqJBCqmfgtIfdeUw'}
+    headers = {'token': ''}
     myurl = 'https://www.ncdc.noaa.gov/cdo-web/api/v2/locations?location&limit=1000&' + 'offset=' + str(offset_counter)
     request = urllib.request.Request(myurl, headers = headers)
     file_path = './locations_'+str(file_counter)+'.json'
